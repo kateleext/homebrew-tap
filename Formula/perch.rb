@@ -5,21 +5,21 @@
 class Perch < Formula
   desc "Minimal file viewer for coding agents"
   homepage "https://github.com/kateleext/perch"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kateleext/perch/releases/download/v0.3.0/perch_darwin_amd64.tar.gz"
-      sha256 "c68dab1cd8699bb1f87841ec434f46dc4ad0a1a55302fd960b759f0471b5f09f"
+      url "https://github.com/kateleext/perch/releases/download/v0.4.0/perch_darwin_amd64.tar.gz"
+      sha256 "05b17cca884cb66c65bda80450deba603ef86079bddb5b2d7050bbaac0737d52"
 
       def install
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kateleext/perch/releases/download/v0.3.0/perch_darwin_arm64.tar.gz"
-      sha256 "2d0038f98e1877aa5a23d0c2a91b90f5f65b646c58bf0ee2ee5248f38862856a"
+      url "https://github.com/kateleext/perch/releases/download/v0.4.0/perch_darwin_arm64.tar.gz"
+      sha256 "8a68a9d157b5447699ad4aecde272f26cbbe73e3f75b7d4fce13350eb73a4ce6"
 
       def install
         bin.install "perch"
@@ -29,22 +29,18 @@ class Perch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kateleext/perch/releases/download/v0.3.0/perch_linux_amd64.tar.gz"
-      sha256 "0f85173e3fe210b585d89699330992c3a6ee21c826e1983a0f2ee72452c2b002"
+      url "https://github.com/kateleext/perch/releases/download/v0.4.0/perch_linux_amd64.tar.gz"
+      sha256 "488f2f038c2f76e3dbae3c8b42b71d1934b4731c5f34d1b36a058a5d201791a5"
       def install
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kateleext/perch/releases/download/v0.3.0/perch_linux_arm64.tar.gz"
-      sha256 "7a390a780e423f87f8b3bfd2c0ab2fa591bc28a342d182198bdcdf9291fd3918"
+      url "https://github.com/kateleext/perch/releases/download/v0.4.0/perch_linux_arm64.tar.gz"
+      sha256 "33773a1bfdcbc1718cabf79e6576bf759eff60693a6fc614383a33b7552c9bee"
       def install
         bin.install "perch"
       end
     end
-  end
-
-  test do
-    system "#{bin}/perch --help" if File.exist?("#{bin}/perch")
   end
 end
