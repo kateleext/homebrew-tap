@@ -11,7 +11,7 @@ class Perch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kateleext/perch/releases/download/v0.0.1/perch_darwin_amd64.tar.gz"
-      sha256 "72dfe32cc452deba2cf04b0bd0ec9d1825b04b4636140d1330d8a4f398615e75"
+      sha256 "a5211a087eba931e74b056b0c98bd030c908bdabf9497a0daf1f590b2cca0301"
 
       def install
         bin.install "perch"
@@ -19,7 +19,7 @@ class Perch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kateleext/perch/releases/download/v0.0.1/perch_darwin_arm64.tar.gz"
-      sha256 "bb2c6c3db1fd4d06af1ff68589aed27502bd12a43408950f28b3990c802de49f"
+      sha256 "98b4c068e76b39f7b1382818644f3c9307dd4fd6da07357264100bebebaa5229"
 
       def install
         bin.install "perch"
@@ -30,14 +30,14 @@ class Perch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kateleext/perch/releases/download/v0.0.1/perch_linux_amd64.tar.gz"
-      sha256 "8dcc4fcd7710dbc46b9540a0227d7b6a4cfe2fcefc7fc7d14f21ca37860a3412"
+      sha256 "b0cbf39d37f2c2e5935bafdb898614f21e7b2aa6c232a1d75411cd851e1c620d"
       def install
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kateleext/perch/releases/download/v0.0.1/perch_linux_arm64.tar.gz"
-      sha256 "a92c25fb4710ecccbc6bbf8b385b7dd365a6e9cd68f49db51a16663e4ac05a94"
+      sha256 "ff530d6cf0fa1f2cc1851752cbb91624e9c66b22c1a84a569d46acaca21d1adc"
       def install
         bin.install "perch"
       end
