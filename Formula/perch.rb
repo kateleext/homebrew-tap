@@ -5,21 +5,21 @@
 class Perch < Formula
   desc "Passive file monitor for coding sessions"
   homepage "https://github.com/kateleext/perch"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kateleext/perch/releases/download/v0.1.0/perch_darwin_amd64.tar.gz"
-      sha256 "4b30f9f4a8f8f8b1696f9ae515eb1d861f3a4fd953601ca592d691c23fc2bbeb"
+      url "https://github.com/kateleext/perch/releases/download/v0.2.0/perch_darwin_amd64.tar.gz"
+      sha256 "28f81b60eb12c6d98b11c344e15dc4e3be9bab5f1c19a556972e0beb9f181a8c"
 
       def install
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kateleext/perch/releases/download/v0.1.0/perch_darwin_arm64.tar.gz"
-      sha256 "56b275a8f04d28b3b467e7b7e23141aa8a0b5f1bd902bfc6d228cb6c4870af90"
+      url "https://github.com/kateleext/perch/releases/download/v0.2.0/perch_darwin_arm64.tar.gz"
+      sha256 "2433cf492a7ef346c1da2b521ffeefa15025334ea70ab624648b703161937ef2"
 
       def install
         bin.install "perch"
@@ -29,15 +29,15 @@ class Perch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kateleext/perch/releases/download/v0.1.0/perch_linux_amd64.tar.gz"
-      sha256 "e9dcf4fdf3f9509617d75ba6b11aa420c89f650de16d9b845083eedabf4caa32"
+      url "https://github.com/kateleext/perch/releases/download/v0.2.0/perch_linux_amd64.tar.gz"
+      sha256 "22831ab6e17d98f2c3ef52c01326e5620a9686f3bfef56b2479b16ffee1b7e77"
       def install
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kateleext/perch/releases/download/v0.1.0/perch_linux_arm64.tar.gz"
-      sha256 "60fcc9439093be263be23c7167564f1f23e3f22ad6ed58c1af37634fde3343aa"
+      url "https://github.com/kateleext/perch/releases/download/v0.2.0/perch_linux_arm64.tar.gz"
+      sha256 "3dd80084ce08d6525cd3ed71a151572c8629e4d0eb68e261a45d476920e6dbae"
       def install
         bin.install "perch"
       end
