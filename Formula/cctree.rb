@@ -1,28 +1,28 @@
 class Cctree < Formula
   desc "Browse every Claude Code session, running and past, as a folder tree"
   homepage "https://github.com/kateleext/cctree"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kateleext/cctree/releases/download/v0.1.1/cctree_darwin_arm64.tar.gz"
-      sha256 "2cf8ce74c1ee89531f19c312eea780e0d19dd8b30bdce14f02cffcfec8d0b752"
+      url "https://github.com/kateleext/cctree/releases/download/v0.1.2/cctree_darwin_arm64.tar.gz"
+      sha256 "eccc9e379e424155df2efbbe8cd946c549f53f7dda912ab2ac13422f59170916"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kateleext/cctree/releases/download/v0.1.1/cctree_darwin_amd64.tar.gz"
-      sha256 "f5101008cf30ed01f9ff2ec77a16feef039a8de54c5c1bffedec9bbb502cb43a"
+      url "https://github.com/kateleext/cctree/releases/download/v0.1.2/cctree_darwin_amd64.tar.gz"
+      sha256 "39b1d2083d36b3b412b0b8739b13ea01efe3fd3486f1ff24093827d704d3666f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kateleext/cctree/releases/download/v0.1.1/cctree_linux_arm64.tar.gz"
-      sha256 "86a205e628e45820bd7171b6cc65366ec3ce74beba41a49488289c753e37a6dc"
+      url "https://github.com/kateleext/cctree/releases/download/v0.1.2/cctree_linux_arm64.tar.gz"
+      sha256 "37ff1d443a1cfc4c8e93ea4a8016f1c7336f4775ef3aad7e0cf4214800d8cbd8"
     end
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kateleext/cctree/releases/download/v0.1.1/cctree_linux_amd64.tar.gz"
-      sha256 "d34bb642470a36b5793cd1f1dabb96101c0db00cf75dbdb14901dcd3c2df5634"
+      url "https://github.com/kateleext/cctree/releases/download/v0.1.2/cctree_linux_amd64.tar.gz"
+      sha256 "6cbfeaf2aa1ce366bbf3083cd2ed4e98793d2d722c8eb41ff2161b93f3e99129"
     end
   end
 
